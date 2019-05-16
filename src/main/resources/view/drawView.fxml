@@ -1,10 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.DrawController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrawController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="1920.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Datei">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Neu..">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <Menu mnemonicParsing="false" text="Neues Template">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="muss noch überlegen" />
+                        <MenuItem mnemonicParsing="false" text="muss noch überlegen" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Öffnen...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <Menu mnemonicParsing="false" text="Öffne die letzten">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Als PDF Exportieren" />
+                        <MenuItem mnemonicParsing="false" text="Als PNG Exportieren" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Speichern">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Speichern unter" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Exportieren..." />
+                  <Menu mnemonicParsing="false" text="Exportieren diagram">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Als PDF Exportieren" />
+                        <MenuItem mnemonicParsing="false" text="Als PNG Exportieren" />
+                        <MenuItem mnemonicParsing="false" text="Als SVG Exportieren" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Alle als PDF Exportieren" />
+                        <MenuItem mnemonicParsing="false" text="Alle als PDF Exportieren" />
+                        <MenuItem mnemonicParsing="false" text="Alle als PDF Exportieren" />
+                    </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Drucken">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="UML2.5 Beenden">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Bearbeiten">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Zurück">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Wiederherstellen">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Y" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Auschneiden">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Kopieren">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Diagramm als ein Bild kopieren">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Einfügen">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Löschen" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Nach Oben bewegen">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="CHANNEL_UP" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Nach unten bewegen">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="CHANNEL_DOWN" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Alle auswählen">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Format">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Schriftarten">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Füllfarbe">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Linienfarbe">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Automatische größenanpassung">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <Menu mnemonicParsing="false" text="Ausrichtung">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Nach Hinten Verschieben" />
+                        <MenuItem mnemonicParsing="false" text="Nach Vorne Verschieben" />
+                     </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <Menu mnemonicParsing="false" text="Layout">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Von oben nach unten" />
+                        <MenuItem mnemonicParsing="false" text="Von unten nach oben" />
+                        <MenuItem mnemonicParsing="false" text="Von Rechts nach Links" />
+                        <MenuItem mnemonicParsing="false" text="Von Links nach Rechts" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Model">
+               <items>
+                  <Menu mnemonicParsing="false" text="Diagramme">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Klassendiagramme" />
+                        <MenuItem mnemonicParsing="false" text="Objektdiagramm" />
+                        <MenuItem mnemonicParsing="false" text="Kompositionsstrukturdiagramm" />
+                        <MenuItem mnemonicParsing="false" text="Komponentenorientiert" />
+                        <MenuItem mnemonicParsing="false" text="Paketdiagramm" />
+                        <MenuItem mnemonicParsing="false" text="Anwendungsfalldiagramm" />
+                        <MenuItem mnemonicParsing="false" text="Aktivitätsdiagramm" />
+                        <MenuItem mnemonicParsing="false" text="Zustandsdiagramm" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Finden">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Code Generieren">
+               <items>
+                  <Menu mnemonicParsing="false" text="Sprachen">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Java">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Code Generieren" />
+                              <MenuItem mnemonicParsing="false" text="UML Rückgewinnung" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="PHP">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Code Generieren" />
+                              <MenuItem mnemonicParsing="false" text="UML Rückgewinnung" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="C#">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Code Generieren" />
+                              <MenuItem mnemonicParsing="false" text="UML Rückgewinnung" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Ruby">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Code Generieren" />
+                              <MenuItem mnemonicParsing="false" text="UML Rückgewinnung" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Python">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Code Generieren" />
+                              <MenuItem mnemonicParsing="false" text="UML Rückgewinnung" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ansicht">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Schließe Diagramm" />
+                  <MenuItem mnemonicParsing="false" text="Schließe alle anderen Diagramm" />
+                  <MenuItem mnemonicParsing="false" text="Schließe alle Diagramm" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Nächstes Diagramm" />
+                  <MenuItem mnemonicParsing="false" text="Diagramm Vorschau" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Grid   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="G" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Linke Seite   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="NUMPAD1" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Navigation   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="NUMPAD2" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Werkzeugkasten   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="NUMPAD3" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Status   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="NUMPAD4" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Symbole Fenster   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="NUMPAD5" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Editor   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="NUMPAD6" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Miniatursicht   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="MiniMap   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="M" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <CheckMenuItem mnemonicParsing="false" selected="true" text="Relation   Ein/Aus">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Fenster">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Minimieren">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="M" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Vollbild" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Hilfe">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Über" />
+                  <MenuItem mnemonicParsing="false" text="Auf Updates Prüfen" />
+                  <MenuItem mnemonicParsing="false" text="Probleme melden" />
+                  <MenuItem mnemonicParsing="false" text="UML2.5 Dokumentation" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
 </AnchorPane>
